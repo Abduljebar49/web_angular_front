@@ -1,26 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './login/login.component';
-import { NotFoundComponent } from './not-found/not-found.component';
 
-const routes: Routes = [
-  {
-    path:'',
-    loadChildren: ()=>import('./home/home.module').then((m)=>m.HomeModule)
-  },
-  {
-    path:'admin',
-    loadChildren:()=>import('./admin/admin.module').then(m=>m.AdminModule)
-  },
-  {
-    path:'login',
-    component:LoginComponent
-  },
-  {
-    path:'**',
-    component:NotFoundComponent
-  }
-];
+const routes: Routes = [];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
