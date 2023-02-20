@@ -12,6 +12,8 @@ import { DonationComponent } from './donation/donation.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { SharedModule } from '../shared/shared.module';
+import { AudiosComponent } from './audios/audios.component';
+import { VideosComponent } from './videos/videos.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { SharedModule } from '../shared/shared.module';
     DonationComponent,
     BlogComponent,
     ContactUsComponent,
+    AudiosComponent,
+    VideosComponent,
   ],
   imports: [CommonModule, IndexRoutingModule, SharedModule],
 })

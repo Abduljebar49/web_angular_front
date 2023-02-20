@@ -8,6 +8,8 @@ import { DonationComponent } from './donation/donation.component';
 import { EventComponent } from './event/event.component';
 import { HomeComponent } from './home/home.component';
 import { IndexComponent } from './index.component';
+import { AudiosComponent } from './audios/audios.component';
+import { VideosComponent } from './videos/videos.component';
 
 const routes: Routes = [
   {
@@ -35,9 +37,18 @@ const routes: Routes = [
         component:DonationComponent
       },
       {
-        path:'blog',
-        component:BlogComponent
+        path:'audios',
+        component:AudiosComponent
       },
+      {
+        path:'videos',
+        component:VideosComponent
+      },
+
+      // {
+      //   path:'blog',
+      //   component:BlogComponent
+      // },
       {
         path:'contact-us',
         component:ContactUsComponent
